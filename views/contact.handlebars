@@ -1,0 +1,52 @@
+{{> mynav}}
+<link rel="stylesheet" href="/assets/css/contact_style.css" type="text/css" />
+<div class="container mainCont">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="page-header">
+                                <h2>
+                                    Contact
+                                </h2>
+                            </div>
+                        </div>
+                    </div> <!-- first row -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <form class="container-fluid" id="contactForm" action="/contact" method="POST">
+                                <div class="row myFormRow">
+                                    <div class="input-group col-xs-12">
+                                        <label for="nameId"><h3>Name</h3></label>
+                                        <input id="nameId" name="nameInput" type="text" class="form-control" placeholder="John Doe" maxlength="50" required>
+                                    </div>
+                                </div>
+                                <div class="row myFormRow">
+                                    <div class="input-group col-xs-12">
+                                        <label for="emailId"><h3>Email</h3></label>
+                                        <input id="emailId" name="emailInput" type="text" class="form-control" placeholder="example@example.com" maxlength="75" required>
+                                    </div>
+                                </div>
+                                <div class="row myFormRow">
+                                    <div class="input-group col-xs-12">
+                                        <label for="messageId"><h3>Message</h3></label>
+                                        <textarea class="form-control" name="messageTextArea" id="messageId" rows="10" maxlength="500" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="row myFormRow">
+                                    <div class="input-group col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                        <input id="mySubmitButton" class="btn btn-default" type="submit" value="Submit">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div> <!-- second row -->
+                </div> <!-- panel body -->
+            </div> <!-- panel -->
+        </div> <!-- col 8 -->
+        {{> myconnect}}
+    </div>
+</div>
+{{> myfooter}}

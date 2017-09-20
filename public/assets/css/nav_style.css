@@ -8,6 +8,7 @@ a{
     background-color: #2f2f2f;
     border: none;
     border-radius:0;
+    z-index: 99;
     border-bottom: 2px solid #9E7E38;
 }
 
