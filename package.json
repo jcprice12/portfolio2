@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/jcprice12/portfolio2#readme",
   "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
     "nodemailer": "^4.1.0"
   }
 }
