@@ -1,0 +1,35 @@
+.mainCont{
+    margin-top: 50px;
+}
+
+.myThumb{
+    width:100%;
+}
+
+.pictureDiv{
+    margin-bottom:20px;
+}
+
+.myLeft{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.workLink{
+    color: #2f2f2f;
+    text-decoration: none; /* no underline */
+}
+
+.work{
+    border:1px solid #9E7E38;
+    border-radius: 4px;
+}
+
+.work:hover{
+    cursor: pointer;
+    background-color: #e6e6e6;
+}
+
+.myRow{
+    margin-bottom: 10px;
+}

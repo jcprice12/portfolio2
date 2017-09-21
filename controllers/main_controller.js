@@ -65,7 +65,7 @@ router.post("/contact", function(req, res) {
         var subjectLine = name + " sends his/her regards from your personal site";
         sendEmail(emailFrom, subjectLine, textBody).then(function(result){
             console.log("Email successfully sent");
-            res.json({success : "Email successfully sent"});
+            res.json({success : "Your email has been successfully sent! I will respond to it as soon as I can."});
         }).catch(function(err){
             console.log("Error while sending email " + err);
             res.json({error : "Error while sending email. Please try again later."})
@@ -76,6 +76,11 @@ router.post("/contact", function(req, res) {
             error : "Name, email, and message body must be filled out."
         });
     }
+});
+
+router.get("/portfolio", function(req, res){
+    var hbsObj = {};
+    res.render("portfolio", hbsObj);
 });
 
 
