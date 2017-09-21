@@ -46,3 +46,8 @@ a.nostyle:visited {
     color: inherit;
     cursor: auto;
 }
+
+.infoDiv{
+    font-style: italic;
+    font-size: 16px;
+}
