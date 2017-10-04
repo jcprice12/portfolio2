@@ -62,7 +62,7 @@ router.post("/contact", function(req, res) {
             console.log("Invalid email text");
             return res.json({error: "Invalid text input."});
         }
-        var subjectLine = name + " sends his/her regards from your personal site";
+        var subjectLine = name + " from " + emailFrom + " sends his/her regards via your personal site";
         sendEmail(emailFrom, subjectLine, textBody).then(function(result){
             console.log("Email successfully sent");
             res.json({success : "Your email has been successfully sent! I will respond to it as soon as I can."});
